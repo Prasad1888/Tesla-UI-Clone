@@ -1,0 +1,791 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Universal-Sans-Text-Regular;
+    src: url('/Fonts/Universal-Sans-Text-Regular.ttf');
+}
+
+@font-face {
+    font-family: Universal-Sans-Text-Medium;
+    src: url('/Fonts/Universal-Sans-Display-Medium.ttf');
+}
+
+@font-face {
+    font-family: Universal-Sans-Text-Bold;
+    src: url('/Fonts/Universal-Sans-Text-Bold.ttf');
+}
+
+@font-face {
+    font-family: Universal-Sans-Display-Medium;
+    src: url('/Fonts/Universal-Sans-Display-Medium.ttf');
+}
+
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c5c1c1;
+    border-radius: 1em;
+}
+
+/* fade-in */
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Hero and nav section */
+.hero-nav-Section {
+    background-image: url('Assets/Homepage-Model-3-Desktop-US.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.navSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 18em; */
+}
+
+.teslaNavLogoSection {
+    /* background: red; */
+    list-style: none;
+    padding: 1em 1em 1em 1em;
+}
+
+.teslaNavlogo>svg {
+    width: 8em;
+}
+
+.teslaNavlogo>svg>path {
+    fill: white;
+}
+
+.teslaNavlogo>img {
+    width: 7em;
+}
+
+.middleNavList {
+    /* background-color: gainsboro; */
+}
+
+.middleNavListSection {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 36em;
+    padding: 1em 1em 1em 1em;
+    color: white;
+    font-family: Universal-Sans-Text-Regular;
+}
+
+.lastNavWrapper {
+    /* background-color: tan; */
+}
+
+.lastNavSection {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 1em 1em;
+    gap: 0.5em;
+}
+
+.lastNavList>svg {
+    width: 1.5em;
+}
+
+.lastNavList>svg>path {
+    fill: white;
+}
+
+.lastNavList>img {
+    width: 1.5em;
+}
+
+.wrapperToMainHeadingAndButtonSectionOfHeroSection {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* mobile navigation section */
+.sm-menuSection {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    /* height: 100vh; */
+    background: #ffffffff;
+}
+
+
+.close-mobile-menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    padding: 1em 1em 1em 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.mobile-menu-list-sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    /* height: 97vh; */
+    /* background: red; */
+}
+
+.mb-menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    width: 100%;
+    /* background: red; */
+    padding: 1em 1em 1em 1em;
+    position: relative;
+    z-index: 0;
+    margin: 3em 0em 0em 0em;
+}
+
+.mb-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #837070; */
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    font-size: 1.2em;
+    font-family: Universal-Sans-Text-Regular;
+    transition: 0.3s ease-in-out;
+}
+
+#mb-menu-account-logo {
+    /* width: 5.5em; */
+    display: flex;
+    /* gap: 1em; */
+}
+
+#mb-menu-account-logo>svg {
+    width: 1.5em;
+}
+
+#mb-menu-earth-logo {
+    /* width: 5.5em; */
+    display: flex;
+    /* gap: 1em; */
+}
+
+#mb-menu-earth-logo>svg {
+    width: 1.5em;
+}
+
+.mb-menu:hover {
+    background-color: #f0f0f0;
+
+}
+
+.mb-menu>span {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.mb-menu>span>svg {
+    width: 1em;
+}
+
+/* model 3 */
+
+.heroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+}
+
+.mainHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    color: #ffffff;
+    flex-direction: column;
+    margin: 1em 0em 0em 0em;
+    gap: 0.3em;
+}
+
+.mainHeadingWrapper>h1 {
+    font-size: 4em;
+    font-family: Universal-Sans-Display-Medium;
+    font-weight: normal;
+}
+
+.mainHeadingWrapper>h2 {
+    text-decoration: underline;
+    font-family: Universal-Sans-Display-Medium;
+    font-weight: normal;
+}
+
+.mainHeadingWrapper>p {
+    font-weight: 600;
+    font-family: Universal-Sans-Text-Regular;
+
+}
+
+.buttonsSections {
+    display: flex;
+    gap: 1em;
+    padding: 1em 0em 1em 0em;
+}
+
+.orderNowBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderNowBtn {
+    padding: .5em .5em .5em .5em;
+    font-size: 1em;
+    width: 18em;
+    background: #3E6AE1;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    font-family: Universal-Sans-Text-Regular;
+}
+
+.demoDriveBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demoDriveBtn {
+    padding: .5em .5em .5em .5em;
+    font-size: 1em;
+    width: 18em;
+    background: #FFFFFF;
+    color: #393C41;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+/* model Y */
+
+.modelYheroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 27em;
+    width: 100%;
+    height: 100vh;
+    background-image: url('Assets/Homepage-Model-Y-Desktop-US-v2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapperToMainHeadingAndButtonSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* model x */
+.modelXheroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-Model-X-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+/* model s */
+.modelSheroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-Model-S-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+/* cyber truck */
+.modelCyberTruckheroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-Cybertruck-Desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.CyberTruckmainHeadingImgWrapper {
+    /* background: red; */
+    /* margin: 3em 0em 0em 0em; */
+    width: 32em;
+    height: 15em;
+    background-image: url('Assets/cybertruck_svg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25em 10em;
+}
+
+.cybertruckLogoImg {
+    width: 100%;
+    height: 100vh;
+}
+
+.CyberTruckOrderNowBtnSection {
+    border-radius: 0.3em;
+    border-top: 3px solid #8e8e8e;
+}
+
+.CyberTruckOrderNowBtn {
+    background: #111111;
+    color: #A2A3A5;
+    padding: .5em .5em .5em .5em;
+    font-size: 1em;
+    width: 18em;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.CyberTruckDemoDriveBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CyberTruckDemoDriveBtn {
+    padding: .5em .5em .5em .5em;
+    font-size: 1em;
+    width: 18em;
+    background: #111111;
+    color: #A2A3A5;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+/* solar panels */
+.SolarPanelsHeroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-SolarPanels-01-Desktop.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* solar roofs */
+.solarRoofsHeroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-SolarRoof-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PowerWall */
+
+.powerWallHeroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-Powerwall-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Accessories */
+.accessoriesHeroHeadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 27em; */
+    width: 100%;
+    height: 95vh;
+    background-image: url('Assets/Homepage-Accessories-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* footer */
+
+.footerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    color: white;
+    gap: 2em;
+}
+
+.footerParas {
+    width: 49em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0em 0em 0em;
+    font-family: 'Universal-Sans-Text-Regular';
+    font-size: 0.8em;
+    color: #D0D1D2;
+}
+
+.footerParasSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 43em;
+    margin: 2em 0em 0em 0em;
+    /* text-align: center; */
+    gap: 1em;
+}
+
+.footerPara {
+    text-align: center;
+    line-height: 1.3em;
+    /* font-size: 0.9em; */
+}
+
+.footerListWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerListSection {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    /* background: darkgreen; */
+    margin: 1em 0em 1em 0em;
+    font-weight: normal;
+    font-size: 0.8EM;
+    font-family: 'Universal-Sans-Text-Regular';
+    color: #D0D1D2;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* responsive design */
+@media screen and (max-width: 869px) {
+
+    .navSection {
+        align-items: center;
+    }
+
+    .middleNavListSection {
+        display: none;
+    }
+
+    .lastNavSection {
+        display: none;
+    }
+
+    .sm-menuSection {
+        display: block;
+        /* background: red; */
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .menu {
+        color: white;
+        padding: 0.3em 0.3em 0.2em 0.2em;
+    }
+
+    .menu>p {
+        background: #00000026;
+        font-size: 0.8em;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 0.4em;
+        cursor: pointer;
+        font-family: Universal-Sans-Text-Medium;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu>p:hover {
+        background: #ffffff24;
+    }
+
+    .close-mobile-menu-icon-wrapper>span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.3em 0.3em 0.3em 0.3em;
+        border-radius: 0.3em;
+        transition: 0.3s ease-in-out;
+    }
+
+    .close-mobile-menu-icon-wrapper>span:hover {
+        background: #f4efef;
+
+    }
+
+    .close-mobile-menu-icon-wrapper>span>svg {
+        width: 1em;
+    }
+}
+
+@media screen and (max-width:724px) {
+    .footerParas {
+        width: 100%;
+        padding: 0em 1em 0em 1em;
+    }
+
+    .footerListSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orderNowBtn {
+        width: 10em;
+    }
+
+    .demoDriveBtn {
+        width: 10em;
+    }
+
+    .CyberTruckOrderNowBtn {
+        width: 10em;
+    }
+
+    .CyberTruckDemoDriveBtn {
+        width: 10em;
+    }
+}
+
+@media screen and (max-width:642px) {
+    .wrapperToMainHeadingAndButtonSectionOfHeroSection {
+        width: 100%;
+        height: 88vh;
+    }
+
+    .hero-nav-Section {
+        background-image: url('Assets/Homepage-Model-3-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modelYheroHeadingWrapper {
+        background-image: url('Assets/Homepage-Model-Y-Mobile-US-v2.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modelXheroHeadingWrapper {
+        background-image: url('Assets/Homepage-Model-X-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modelSheroHeadingWrapper {
+        background-image: url('Assets/Homepage-Model-S-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modelCyberTruckheroHeadingWrapper {
+        background-image: url('Assets/Homepage-Cybertruck-Mobile.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .CyberTruckmainHeadingImgWrapper {
+        background-size: 15em 15em;
+        width: 16em;
+        height: 14em;
+    }
+
+    .SolarPanelsHeroHeadingWrapper {
+        background-image: url('Assets/Homepage-SolarPanels-01-Mobile.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .solarRoofsHeroHeadingWrapper {
+        background-image: url('Assets/Homepage-SolarRoof-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .powerWallHeroHeadingWrapper {
+        background-image: url('Assets/Homepage-Powerwall-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .accessoriesHeroHeadingWrapper {
+        background-image: url('Assets/Homepage-Accessories-Mobile-US.avif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:553px) {
+    .cybertruckLogoImg {
+        width: 25em;
+    }
+}
+
+@media screen and (max-width:525px){
+    .CyberTruckmainHeadingImgWrapper{
+        width: 25em;
+    }
+}
+
+@media screen and (max-width:472px) {
+    .mainHeadingWrapper {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .mainHeadingWrapper {
+        text-align: center;
+    }
+
+    .mainHeadingWrapper>h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:437px) {
+    .mainHeadingWrapper>h2 {
+        width: 10em;
+    }
+
+    .cybertruckLogoImg {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width:413px){
+    .CyberTruckmainHeadingImgWrapper{
+        width: 15em;
+    }
+}
+
+@media screen and (max-width:359px) {
+    .orderNowBtn {
+        width: 8em;
+    }
+
+    .demoDriveBtn {
+        width: 8em;
+    }
+
+    .CyberTruckOrderNowBtn {
+        width: 8em;
+    }
+
+    .CyberTruckDemoDriveBtn {
+        width: 8em;
+    }
+}
